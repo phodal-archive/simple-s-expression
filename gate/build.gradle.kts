@@ -12,7 +12,10 @@ repositories {
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(kotlin("reflect"))
-    // Kotlin reflection.
-    implementation(kotlin("test"))
-    implementation(kotlin("test-junit"))
+
+    testImplementation(kotlin("test"))
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
