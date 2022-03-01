@@ -13,6 +13,10 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(kotlin("reflect"))
 
+    implementation(kotlin("compiler-embeddable"))
+    implementation(kotlin("scripting-jsr223"))
+    runtimeOnly(kotlin("scripting-compiler-embeddable"))
+
     testImplementation(kotlin("test"))
 }
 
