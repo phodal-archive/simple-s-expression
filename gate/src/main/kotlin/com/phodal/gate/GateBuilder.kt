@@ -33,3 +33,8 @@ public fun query(initializer: GateBuilder.() -> Unit): GateBuilder {
     return GateBuilder().apply(initializer)
 }
 
+
+public fun unit(unitType: String, initializer: GateBuilder.() -> Unit): GateBuilder {
+    return GateBuilder().apply(initializer)
+}
+
