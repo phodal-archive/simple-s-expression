@@ -15,6 +15,10 @@ internal class GateBuilderTest {
 
         }
 
+    }
+
+    @Test
+    internal fun test_run_kotlin_script() {
         val engine = ScriptEngineManager().getEngineByExtension("kts")
         engine.eval("""print("hello")""")
     }
